@@ -4,3 +4,6 @@ print("-" *30)
 
 # 1. Where do i create the folder
 base_path = r"C:\Users\USER\Downloads"
+
+# 2. What will i name this folder 
+project_name = "NEW_UWC_PROJECT"
