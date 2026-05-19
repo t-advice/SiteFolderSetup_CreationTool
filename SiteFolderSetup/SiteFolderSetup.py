@@ -25,6 +25,17 @@ print("-" *30)
 # 5. If i want to create some subfolders within main project
 sub_folders = ["Invoices", "Site_Photos","Daily_Logs"]
 
+# 6. Loop through the list and create each subfolder.
+for folder in sub_folders:
+    # I need to combine the main with my subfolders.
+    sub_folders_path = os.path.join(full_project_path, folder)
+
+    if not os.path.exist(sub_folders_path):
+        os.makedirs(sub_folders_path)
+
+        print(f"--> Created subfolder: {folder}")
+
+
 
 
 
